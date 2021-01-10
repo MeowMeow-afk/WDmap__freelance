@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="MapStyles.css" />
+    <title>Map</title>
+  </head>
+  <body>
+    <!-- Mobile View -->
+    <!-- Header -->
+    <div class="header">
+      <div class="header__sidebar">
+        <h1>Side</h1>
+        <img class="sidebar__image1" src="images/wm-logo.svg" />
+        <img class="sidebar__image2" src="images/bell.svg" />
+      </div>
+      <div class="header__search">
+        <div class="search__2x">
+          <img src="images/search.svg" />
+          <input placeholder="Products, retailers, brands and more" />
+          <img src="images/location.svg" />
+          <input placeholder="New Delhi, DL" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigations -->
+    <div class="navigations">
+      <ul>
+        <li>Order online</li>
+        <li>Dispensaries</li>
+        <li>Deliveries</li>
+        <li>Deals</li>
+        <li>Products</li>
+        <li>Brands</li>
+        <li>Strains</li>
+        <li>Learn</li>
+        <li>News</li>
+      </ul>
+    </div>
+
+    <!-- Desktop View -->
+    <!-- Desktop header and navigation -->
+    <div class="desktop__header">
+      <div class="header__left">
+        <img class="sidebar__image1" src="images/wm-logo.svg" />
+        <div class="header__search">
+          <div class="search__2x">
+            <img src="images/search.svg" />
+            <input placeholder="Products, retailers, brands and more" />
+            <img src="images/location.svg" />
+            <input placeholder="New Delhi, DL" />
+          </div>
+          <div class="desktop__navigations">
+            <ul>
+              <li>Order online</li>
+              <li>Dispensaries</li>
+              <li>Deliveries</li>
+              <li>Deals</li>
+              <li>Products</li>
+              <li>Brands</li>
+              <li>Strains</li>
+              <li>Learn</li>
+              <li>News</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <img class="sidebar__image2" src="images/bell.svg" />
+        <img class="sidebar__image2" src="images/shopping-cart.svg" />
+        <a>
+          <p class="login">Log in</p>
+        </a>
+        <button class="right__btn">Sign up</button>
+      </div>
+    </div>
+
+    <!-- Bread Crumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">HOME</a></li>
+        <li class="breadcrumb-item"><a href="#">UNITED STATE</a></li>
+        <li class="breadcrumb-item"><a href="#">CALIFORNIA</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Anaheim listings
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Header and button list -->
+    <div class="header__buttons">
+      <h1><span>Marijuana Listings</span> in Anaheim, CA</h1>
+      <div class="button__list">
+        <ul>
+          <li>
+            <button class="btn">Order online</button>
+          </li>
+          <li>
+            <button class="btn">Open now</button>
+          </li>
+          <li>
+            <button class="btn">Crubside pickup</button>
+          </li>
+          <li>
+            <button class="btn">Storefronts</button>
+          </li>
+          <li>
+            <button class="btn">Delivery</button>
+          </li>
+          <li>
+            <button class="btn">Doctors</button>
+          </li>
+          <li>
+            <button class="btn">Mail Order</button>
+          </li>
+          <li>
+            <button class="filter__btn">
+              <img src="images/filter.svg" />
+              Filter
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Map for desktop and mobile-->
+    <div class="map">
+      <h1>This is Map</h1>
+      <div class="status__side">
+        <div class="status__desktop">
+          <div class="status__header">
+            <div class="header__top">
+              <img style="height: 2rem" src="images/car.svg" alt="car image" />
+              <h2>Deliver to :</h2>
+            </div>
+            <input type="text" placeholder="Enter your address" />
+            <div class="header__last">
+              <h2>Showing results 1-100</h2>
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle dropdown__style"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Sort by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Featured</a>
+                  <a class="dropdown-item" href="#">Hightest rated</a>
+                  <a class="dropdown-item" href="#">Most reviewed</a>
+                  <a class="dropdown-item" href="#">Name A-Z</a>
+                  <a class="dropdown-item" href="#">Name Z-A</a>
+                  <a class="dropdown-item" href="#">Largest menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="status__cards">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button class="view__menu">View menu</button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button class="view__menu">View menu</button>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="..." alt="Card image cap" />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <button class="view__menu">View menu</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side__products">
+          <div class="img__container">
+            <!-- demo -->
+            <h2>Image Here</h2>
+          </div>
+          <div class="product__info">
+            <p>Storewide</p>
+            <h3>Citizen Stash - PREROLL SALE!!</h3>
+            <p>Hi Class Cannabis</p>
+            <p>🏬 Storefront</p>
+            <p>Recreational</p>
+            <p>⭐⭐⭐⭐⭐ 5.0(4)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- status -->
+    <div class="status">
+      <ul>
+        <li>
+          <hr class="marker" />
+        </li>
+        <li class="store__info">
+          <ul>
+            <li>
+              <h1 class="heading">
+                Marijuana Dispensaries in Toronto West, ON
+              </h1>
+            </li>
+            <li>
+              <div class="button__list">
+                <ul>
+                  <li>
+                    <button class="filter__btn">
+                      <img src="images/filter.svg" />
+                      Filter
+                    </button>
+                  </li>
+                  <li>
+                    <button class="btn">Order online</button>
+                  </li>
+                  <li>
+                    <button class="btn">Open now</button>
+                  </li>
+                  <li>
+                    <button class="btn">Crubside pickup</button>
+                  </li>
+                  <li>
+                    <button class="btn">Storefronts</button>
+                  </li>
+                  <li>
+                    <button class="btn">Delivery</button>
+                  </li>
+                  <li>
+                    <button class="btn">Doctors</button>
+                  </li>
+                  <li>
+                    <button class="btn">Mail Order</button>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem">
+                <img class="card-img-top" src="..." alt="Card image cap" />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <button class="view__menu">View menu</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My script -->
+    <script src="script.js"></script>
+  </body>
+</html>

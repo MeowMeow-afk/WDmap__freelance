@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link rel="stylesheet" href="frontStyling.css" />
+    <title>Front Page</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__sidebar">
+        <h1>Side</h1>
+        <img class="sidebar__image1" src="images/wm-logo.svg" />
+        <img class="sidebar__image2" src="images/bell.svg" />
+      </div>
+      <div class="header__search">
+        <div class="search__2x">
+          <img src="images/search.svg" />
+          <input placeholder="Products, retailers, brands and more" />
+          <img src="images/location.svg" />
+          <input placeholder="New Delhi, DL" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigations -->
+    <div class="navigations">
+      <ul>
+        <li>Order online</li>
+        <li>Dispensaries</li>
+        <li>Deliveries</li>
+        <li>Deals</li>
+        <li>Products</li>
+        <li>Brands</li>
+        <li>Strains</li>
+        <li>Learn</li>
+        <li>News</li>
+      </ul>
+    </div>
+
+    <!-- Desktop header and navigation -->
+    <div class="desktop__header">
+      <div class="header__left">
+        <img class="sidebar__image1" src="images/wm-logo.svg" />
+        <div class="header__search">
+          <div class="search__2x">
+            <img src="images/search.svg" />
+            <input placeholder="Products, retailers, brands and more" />
+            <img src="images/location.svg" />
+            <input placeholder="New Delhi, DL" />
+          </div>
+          <div class="desktop__navigations">
+            <ul>
+              <li>Order online</li>
+              <li>Dispensaries</li>
+              <li>Deliveries</li>
+              <li>Deals</li>
+              <li>Products</li>
+              <li>Brands</li>
+              <li>Strains</li>
+              <li>Learn</li>
+              <li>News</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__right">
+        <img class="sidebar__image2" src="images/bell.svg" />
+        <img class="sidebar__image2" src="images/shopping-cart.svg" />
+        <a>
+          <p class="login">Log in</p>
+        </a>
+        <button class="right__btn">Sign up</button>
+      </div>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <div class="alert__text">
+        <h2>Covid 19 :</h2>
+        <a href="#"
+          >stay safe by ordering online for delivery or curbside pickup (where
+          available)</a
+        >
+      </div>
+    </div>
+
+    <!-- Delivery type  -->
+    <div class="delivery">
+      <h1>Delivery</h1>
+      <h1>Pickup</h1>
+    </div>
+
+    <!-- button List  -->
+    <div class="button__list">
+      <ul>
+        <li>
+          <button class="btn">Order online</button>
+        </li>
+        <li>
+          <button class="btn">Open now</button>
+        </li>
+        <li>
+          <button class="btn">Medical only</button>
+        </li>
+        <li>
+          <button class="btn">Recreational only</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Featured brands -->
+    <div class="products">
+      <!-- products -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>Featured Brands</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vape pens -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>Vape pens</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flowers -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>Flowers</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Concentrates -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>Concentrates</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edibles -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>Edibles</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CBD/THC -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>CBD/THC</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CBD -->
+      <div class="brands">
+        <div class="brands__header">
+          <h2>CBD</h2>
+          <button class="featured__btn">View all</button>
+        </div>
+        <div class="featured__cards">
+          <div class="carousel slider" data-flickity='{"wrapAround": true}'>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.2
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.3
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.4
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.6
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.7
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="card" style="width: 18rem">
+                <img src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__1">
+        <h1>Dispensary Regions</h1>
+        <div class="list">
+          <div class="dispencary__list1">
+            <ul>
+              <li>California</li>
+              <li>Salem</li>
+              <li>Vancouver</li>
+              <li>Boulder</li>
+              <li>Massachusetts</li>
+              <li>MaryLand</li>
+            </ul>
+            <ul>
+              <li>Los Angeles</li>
+              <li>Albany/Corvallis</li>
+              <li>Colorado</li>
+              <li>Nevada</li>
+              <li>Boston</li>
+              <li>Florida</li>
+            </ul>
+            <ul>
+              <li>San Francisco</li>
+              <li>Washington</li>
+              <li>Denver</li>
+              <li>Las Vegas</li>
+              <li>Ayer</li>
+              <li>LLLinois</li>
+            </ul>
+          </div>
+          <div class="dispencary__list2">
+            <ul>
+              <li>Oregon</li>
+              <li>Seattle</li>
+              <li>Colorado Springs</li>
+              <li>Reno</li>
+              <li>Michigan</li>
+              <li>Chicago</li>
+            </ul>
+            <ul>
+              <li>Portland</li>
+              <li>Spokane</li>
+              <li>Fort Collins</li>
+              <li>Henderson</li>
+              <li>Detroit</li>
+              <li>Oklahoma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__2">
+        <div class="footer2__inner">
+          <img class="logo" src="images/logo.svg" />
+          <div class="footer2__info">
+            <p>
+              A community connecting cannabis consumers, patients, retailers,
+              doctors, and brands since 2008.
+            </p>
+          </div>
+          <div class="playAndApp">
+            <img src="images/ios-app-store.svg" />
+            <img src="images/google-play-store-badge.svg" />
+          </div>
+          <div class="services__at">
+            <img src="images/facebook.svg" />
+            <img src="images/instagram.svg" />
+            <img src="images/twitter.svg" />
+            <img src="images/linkedin.svg" />
+            <img src="images/youtube.svg" />
+            <img src="images/medium.svg" />
+          </div>
+        </div>
+        <div class="footer__3">
+          <ul>
+            <li><img class="business__logo" src="images/logo.svg" /></li>
+            <li>Get started</li>
+            <li>Add a business</li>
+            <li>For retailers</li>
+            <li>For brands</li>
+            <li>For advertisers</li>
+            <li>For developers</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__4">
+        <p>
+          Copyright © 2021 Weedmaps.
+          <img style="height: 1.5rem" src="images/logo.svg" />
+          &
+          <img style="height: 1.7rem" src="images/wm-logo.svg" />
+          are registered trademarks of Ghost Management Group, LLC. All Rights
+          Reserved.
+        </p>
+      </div>
+    </div>
+    <!-- bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
